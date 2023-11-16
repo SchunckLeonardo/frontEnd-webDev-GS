@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Kanit:wght@100;300;500&display=swap");
+.header-comp {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 5%;
+}
+.header-comp .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.header-comp .logo img {
+  width: 35%;
+}
+.header-comp .logo h3 {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+.header-comp h4 {
+  font-size: 2rem;
+  width: 25%;
+  font-weight: 300;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  font-family: "Kanit", sans-serif;
+}
+
+.allPage {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #525fe1;
+}
+.allPage .loginBox {
+  width: 40%;
+  height: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.allPage .loginBox h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.allPage .loginBox .inputFormatacao {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.allPage .loginBox .inputFormatacao label {
+  font-size: 1.8rem;
+}
+.allPage .loginBox .inputFormatacao div {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.allPage .loginBox .inputFormatacao div input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+.allPage .loginBox .inputFormatacao div .icon-eye {
+  position: absolute;
+  right: 15px;
+  bottom: 50%;
+  transform: translateY(50%);
+  font-size: 2.5rem;
+  color: #f86f03;
+  cursor: pointer;
+}
+.allPage .loginBox button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  border: 0;
+  background-color: #525fe1;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  color: #fff;
+  width: 50%;
+  cursor: pointer;
+}
+.allPage .loginBox button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93, 24, 220) 0px 7px 29px 0px;
+}
+.allPage .loginBox button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93, 24, 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.container-geral {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "figure topicos" "solucao topicos" "vantagens vantagens";
+  background-color: #525fe1;
+  padding-top: 50px;
+}
+.container-geral .img-relacao {
+  grid-area: figure;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container-geral .img-relacao img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container-geral .topicos {
+  grid-area: topicos;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container-geral .topicos-divs {
+  width: 65%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.container-geral .topicos-divs-box h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 3rem;
+}
+.container-geral .topicos-divs-box p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+.container-geral .topicos-divs-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 50px;
+  margin-top: 15px;
+}
+.container-geral .topicos-divs-box ul li {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+.container-geral .topicos-divs-box ul li span {
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.container-geral .topicos-divs-box ol {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 50px;
+  margin-top: 15px;
+}
+.container-geral .topicos-divs-box ol li {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+.container-geral .topicos-divs-box ol li span {
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.container-geral .solucao {
+  grid-area: solucao;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.container-geral .solucao-texto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 25px;
+}
+.container-geral .solucao-texto h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.container-geral .solucao-texto-box {
+  width: 55%;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.container-geral .solucao-texto-box p {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.container-geral .solucao button {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ffa41b;
+  margin-right: 10%;
+}
+.container-geral .solucao button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.container-geral .solucao button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container-geral .solucao button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.container-geral .solucao button::after {
+  background-color: #ffa41b;
+}
+.container-geral .solucao button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.container-geral .vantagens {
+  grid-area: vantagens;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 3% 5%;
+}
+.container-geral .vantagens h2 {
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.container-geral .vantagens-todas {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+.container-geral .vantagens-todas-box {
+  width: 30.5%;
+  height: 60%;
+}
+.container-geral .vantagens-todas-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.container-geral .vantagens-todas-box-texto h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+.container-geral .vantagens-todas-box-texto h3 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 300;
+}
+.container-geral .vantagens-todas-box-texto p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=style.css.map */

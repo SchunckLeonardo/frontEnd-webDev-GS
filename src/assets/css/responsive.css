@@ -1,0 +1,154 @@
+@media (max-width: 576px) {
+    .header-comp .logo {
+        width: 50%;
+    }
+
+    .header-comp h4 {
+        font-size: 1.5rem;
+    }
+
+    .allPage .loginBox {
+        width: 90%;
+    }
+
+    .vantagens .vantagens-todas {
+        flex-direction: column;
+    }
+    .vantagens .vantagens-todas .vantagens-todas-box {
+        width: 100%;
+    }
+    .container-geral {
+        grid-template-areas:
+            "figure figure"
+            "topicos topicos"
+            "solucao solucao"
+            "vantagens vantagens";
+        gap: 50px;
+    }
+
+    .topicos .topicos-divs {
+        width: 90%;
+    }
+
+    .solucao .solucao-texto {
+        flex-direction: column;
+    }
+
+    .solucao .solucao-texto .solucao-texto-box {
+        width: 80%;
+    }
+}
+
+@media (min-width: 576px) {
+    .header-comp .logo {
+        width: 50%;
+    }
+    .allPage .loginBox {
+        width: 80%;
+    }
+
+    .header-comp .logo h3 {
+        font-size: 2rem;
+    }
+    .vantagens .vantagens-todas {
+        flex-direction: column;
+    }
+    .vantagens .vantagens-todas .vantagens-todas-box {
+        width: 100%;
+    }
+    .container-geral {
+        grid-template-areas:
+            "figure figure"
+            "topicos topicos"
+            "solucao solucao"
+            "vantagens vantagens";
+        gap: 50px;
+    }
+
+    .solucao .solucao-texto {
+        flex-direction: column;
+    }
+
+    .solucao .solucao-texto .solucao-texto-box {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-comp .logo {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-comp .logo {
+        width: 20%;
+    }
+
+    .allPage .loginBox {
+        width: 40%;
+    }
+
+    .container-geral {
+        grid-template-areas:
+            "figure figure"
+            "topicos topicos"
+            "solucao solucao"
+            "vantagens vantagens";
+        gap: 50px;
+    }
+
+    .vantagens .vantagens-todas {
+        flex-direction: row;
+    }
+
+    .vantagens .vantagens-todas .vantagens-todas-box {
+        flex-direction: column;
+        width: 30.5%;
+    }
+
+    .topicos .topicos-divs {
+        width: 80%;
+    }
+
+    .solucao .solucao-texto {
+        flex-direction: column;
+    }
+
+    .solucao .solucao-texto .solucao-texto-box {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 1200px) { 
+
+    .solucao .solucao-texto {
+        flex-direction: row;
+    }
+
+    .solucao .solucao-texto .solucao-texto-box {
+        width: 55%;
+    }
+
+    .container-geral {
+        grid-template-areas:
+            "figure topicos"
+            "solucao topicos"
+            "vantagens vantagens";
+    }
+
+    .vantagens .vantagens-todas {
+        flex-direction: row;
+    }
+
+    .vantagens .vantagens-todas .vantagens-todas-box {
+        flex-direction: column;
+        width: 30.5%;
+    }
+
+    .topicos .topicos-divs {
+        width: 65%;
+    }
+
+ }

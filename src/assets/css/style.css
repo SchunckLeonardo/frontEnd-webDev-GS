@@ -118,6 +118,12 @@ body {
   color: #f86f03;
   cursor: pointer;
 }
+.allPage .loginBox .error {
+  color: #D80032;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 500;
+}
 .allPage .loginBox button {
   padding: 17px 40px;
   border-radius: 50px;

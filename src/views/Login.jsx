@@ -11,6 +11,8 @@ export default function Login() {
     let [password, setPassword] = useState("")
     let [username, setUsername] = useState("")
 
+    const [showError, setShowError] = useState(false)
+
     const navigate = useNavigate()
 
     const handleOnClick = () => {
@@ -39,9 +41,10 @@ export default function Login() {
                 sessionStorage.setItem("username", username)
                 sessionStorage.setItem("password", password)
                 sessionStorage.setItem("name", user.name)
+                setShowError(false)
                 navigate("/infos")
             } else {
-                console.log("Usuário não cadastrado")
+                setShowError(true)
             }
         })
     }
@@ -64,6 +67,9 @@ export default function Login() {
                             <FontAwesomeIcon onClick={handleOnClick} icon={icon} className="icon-eye" />
                         </div>
                     </div>
+                    {
+                        showError?<p className="error">Usuário não cadastrado ou dados incorretos. Tente novamente!</p>:null
+                    }
                     <button onClick={login}>Logar</button>
                 </section>
             </main>

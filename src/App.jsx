@@ -1,13 +1,11 @@
-import { BrowserRouter } from 'react-router-dom'
-import RoutesNav from './RoutesNav'
-
+import { Outlet } from 'react-router'
+import HeaderComp from './components/HeaderComp'
 function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <RoutesNav/>
-      </BrowserRouter>
+      <HeaderComp/>
+      <Outlet/>
     </>
   )
 }

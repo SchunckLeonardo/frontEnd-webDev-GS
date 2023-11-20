@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Login from './views/Login'
 import Infos from './views/Infos'
-import LayoutDefault from './layoutDefault'
+import LayoutDefault from './LayoutDefault'
 
 export default function RoutesNav() {
 

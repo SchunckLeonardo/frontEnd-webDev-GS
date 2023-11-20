@@ -10,6 +10,8 @@ export default function HeaderComp() {
     const username = sessionStorage.getItem("username")
     const password = sessionStorage.getItem("password")
 
+    const [show, setShow] = useState(false)
+
     let sessionStorageEmpty = username != "" && password != ""
     let sessionStorageNull = username == null && password == null
 
@@ -20,14 +22,23 @@ export default function HeaderComp() {
         if (!sessionStorageEmpty || !sessionStorageNull) {
             setEmailUser(username)
             setNameUser(name)
+            setShow(true)
             navigate("/infos")
         } else {
             setEmailUser("")
             setNameUser("")
+            setShow(false)
             navigate("/login")
         }
 
     }, [name, navigate, sessionStorageEmpty, sessionStorageNull, username])
+
+    const handleClickLogout = () => {
+        sessionStorage.removeItem("name")
+        sessionStorage.removeItem("username")
+        sessionStorage.removeItem("password")
+        navigate("/login")
+    }
 
     return (
         <>
@@ -40,6 +51,9 @@ export default function HeaderComp() {
                     {emailUser} {nameUser}
                 </p>
                 <h4>Global Solution 2023 - Engenharia de Software</h4>
+                {
+                    show?<button onClick={handleClickLogout} className="logout">Logout</button>:null
+                }
             </header>
         </>
     )

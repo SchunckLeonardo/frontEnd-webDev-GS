@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Kanit:wght@100;300;500&display=swap");
 .header-comp {
   width: 100%;
-  height: 15vh;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 0 5%;
+  padding: 15px 5%;
 }
 .header-comp .logo {
   display: flex;
@@ -21,10 +21,30 @@
   font-size: 2.6rem;
   font-weight: 500;
 }
+.header-comp p {
+  font-size: 1.5rem;
+  word-spacing: 1.5rem;
+  font-weight: 300;
+}
 .header-comp h4 {
   font-size: 2rem;
   width: 25%;
   font-weight: 300;
+}
+.header-comp .logout {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #D80032;
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.header-comp .logout:hover {
+  border: 1px solid #D80032;
+  background-color: transparent;
+  color: #D80032;
 }
 
 * {

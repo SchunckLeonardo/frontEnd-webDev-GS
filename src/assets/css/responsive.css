@@ -37,6 +37,11 @@
     .solucao .solucao-texto .solucao-texto-box {
         width: 80%;
     }
+
+    .header-comp {
+        flex-direction: column;
+        gap: 25px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -71,6 +76,11 @@
 
     .solucao .solucao-texto .solucao-texto-box {
         width: 80%;
+    }
+
+    .header-comp {
+        flex-direction: column;
+        gap: 25px;
     }
 }
 
@@ -149,6 +159,11 @@
 
     .topicos .topicos-divs {
         width: 65%;
+    }
+
+    .header-comp {
+        flex-direction: row;
+        gap: 0;
     }
 
  }
